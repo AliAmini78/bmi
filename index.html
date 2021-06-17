@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BMI Calculator</title>
+</head>
+
+<body class="none">
+    <div>
+        <div class="container">
+            <img src="img/icons8-sun-96.png" alt="day and night" class="time">
+        </div>
+    </div>
+    <div class="bmi">
+        <div class="container">
+            <div class="content">
+                <div class="container">
+                    <h1>calculat your BMI</h1>
+                    <div>
+                        <label for="height">your height :</label><input type="number" name="height" id="height"
+                            placeholder="please enter your height">
+                    </div>
+                    <div>
+                        <label for="weight">your weight :</label><input type="number" name="weight" id="weight"
+                            placeholder="please enter your weight">
+                    </div>
+                    <button id="sub_btn">submit</button>
+                </div>
+            </div>
+            <div class="page1">
+                <h2>your BMI is :</h2>
+                <span class="answer"></span>
+                <p>
+                    you are underweight
+                </p>
+                <button class="back_btn">back</button>
+            </div>
+            <div class="page2">
+                <h2>your BMI is :</h2>
+                <span class="answer"></span>
+                <p>
+                    you are normal
+                </p>
+                <button class="back_btn">back</button>
+            </div>
+            <div class="page3">
+                <h2>your BMI is :</h2>
+                <span class="answer"></span>
+                <p>
+                    you are overweight
+                </p>
+                <button class="back_btn">back</button>
+            </div>
+            <div class="page4">
+                <h2>your BMI is :</h2>
+                <span class="answer"></span>
+                <p>
+                    you are obese
+                </p>
+                <button class="back_btn">back</button>
+            </div>
+        </div>
+    </div>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

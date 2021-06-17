@@ -1,0 +1,216 @@
+@import "_varibels.scss";
+@import "_font.scss";
+
+
+input,
+textarea,
+button {
+    font-family: $mainFont;
+}
+
+
+
+// global style
+body {
+    transition: all .6s;
+    background:  #f0f8ff;
+}
+
+
+.time {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    
+}
+.bmi{
+    margin-top: 60px;
+    .content{
+        color: $white;
+        padding: 10px;
+        margin: 0 auto;
+        width: 600px;
+        height: 320px;
+        border: 2px solid gray;
+        background:$primary;
+        border-radius: 13px;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.16), 0 6px 12px rgba(0,0,0,0.23);
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        input{
+            width: 100%;
+            padding: 5px;
+        }
+        label{
+            margin-top: 20px;
+            margin-right: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            padding: 5px 20px;
+            border-radius: 13px;
+            text-align: center;
+            outline: none;
+            border: 2px solid rgb(128, 126, 126);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.16), 0 6px 12px rgba(0,0,0,0.23);
+        }
+    }
+    .page1 , .page2, .page3,.page4{
+        /* display: none; */
+        color: $white;
+        padding: 10px;
+        margin: 0 auto;
+        width: 600px;
+        height: 320px;
+        border: 2px solid gray;
+        background: $primary;
+        border-radius: 13px;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.16), 0 6px 12px rgba(0,0,0,0.23);
+        h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 36px;
+            margin-top: 20px;
+            text-align: justify;
+            padding: 10px;
+            font-size: 24px;
+        }
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px auto;
+            padding: 5px 50px;
+            border-radius: 13px;
+            text-align: center;
+            outline: none;
+            border: 2px solid rgb(128, 126, 126);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.16), 0 6px 12px rgba(0,0,0,0.23);
+            
+        }
+    }
+}
+
+
+
+///// js classes
+
+// day and night
+.night {
+    background: #141d26;
+}
+
+
+///// bmi 
+.none{
+    transition: all 0.6s;
+    .page1{
+        display: none;
+    }
+    .page2{
+        display: none;
+    }
+    .page3{
+        display: none;
+    }
+    .page4{
+        display: none;
+    }
+}
+.active_page1{
+    transition: all 0.6s;
+    .content{
+        display: none;
+    }
+    .page1{
+        display:inherit ;
+    }
+    .page2{
+        display:none ;
+    }
+    .page3{
+        display: none;
+    }
+    .page4{
+        display: none;
+    }
+}
+.active_page2{
+    transition: all 0.6s;
+    .content{
+        display: none;
+    }
+    .page1{
+        display: none;
+    }
+    .page2{
+        display:inherit ;
+    }
+    .page3{
+        display: none;
+    }
+    .page4{
+        display: none;
+    }
+}
+.active_page3{
+    transition: all 0.6s;
+    .content{
+        display: none;
+    }
+    .page1{
+        display: none;
+    }
+    .page2{
+        display:none ;
+    }
+    .page3{
+        display: inherit;
+    }
+    .page4{
+        display: none;
+    }
+}
+.active_page4{
+    transition: all 0.6s;
+    .content{
+        display: none;
+    }
+    .page1{
+        display: none;
+    }
+    .page2{
+        display:none ;
+    }
+    .page3{
+        display: none;
+    }
+    .page4{
+        display: inherit;
+    }
+}
